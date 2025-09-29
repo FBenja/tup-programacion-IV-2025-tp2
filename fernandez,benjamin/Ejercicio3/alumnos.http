@@ -1,0 +1,40 @@
+### Crear una materia
+POST http://localhost:3000/materias
+Content-Type: application/json
+
+{
+  "nombre": "Historia"
+}
+
+
+### Listar materias
+GET http://localhost:3000/materias
+
+### Crear alumno (usar un id de materia válido, por ejemplo 1 para Matemática)
+POST http://localhost:3000/alumnos
+Content-Type: application/json
+
+{
+  "nombre": "JuanPérez",
+  "materia_id": 1,
+  "nota1": 8,
+  "nota2": 7.5,
+  "nota3": 9
+}
+
+
+
+### Listar alumnos (con materias)
+GET http://localhost:3000/alumnos
+
+### Modificar alumno (id = 1)
+PUT http://localhost:3000/alumnos/1
+Content-Type: application/json
+
+{
+  "nombre": "JuanPérez",
+  "materia_id": 1,
+  "nota1": 9,
+  "nota2": 8,
+  "nota3": 10
+}
