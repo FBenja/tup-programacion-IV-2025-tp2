@@ -15,7 +15,7 @@ Content-Type: application/json
 
 
 ### Modificar rectangulo
-PUT {{url}}/rectangulos/1
+PUT {{url}}/rectangulos/-2
 Content-Type: application/json
 
 {
@@ -29,5 +29,5 @@ Content-Type: application/json
 
 
 ### Quitar rectangulo
-DELETE {{url}}/rectangulos/2
+DELETE {{url}}/rectangulos/-3
 

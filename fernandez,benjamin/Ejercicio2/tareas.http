@@ -1,0 +1,33 @@
+@url=http://localhost:3000
+
+### Lista de tareas
+GET {{url}}/tareas
+
+
+### Agregar rectangulo
+POST {{url}}/tareas
+Content-Type: application/json
+
+{
+    "name": "hacerElTp",
+    "completada": true
+}
+
+
+### Modificar rectangulo
+PUT {{url}}/tareas/3
+Content-Type: application/json
+
+{
+
+  "name": "hacereltp",
+  "completada": true
+
+}
+
+
+
+
+### Quitar rectangulo
+DELETE {{url}}/tarea/1
+
