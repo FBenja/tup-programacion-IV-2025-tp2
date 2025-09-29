@@ -1,0 +1,33 @@
+@url=http://localhost:3000
+
+### Lista de rectangulos
+GET {{url}}/rectangulos
+
+
+### Agregar rectangulo
+POST {{url}}/rectangulos
+Content-Type: application/json
+
+{
+    "base": 4,
+    "altura": 3
+}
+
+
+### Modificar rectangulo
+PUT {{url}}/rectangulos/1
+Content-Type: application/json
+
+{
+
+  "base": 5,
+  "altura": 6
+
+}
+
+
+
+
+### Quitar rectangulo
+DELETE {{url}}/rectangulos/2
+
